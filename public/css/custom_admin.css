@@ -1,0 +1,57 @@
+/* --- บังคับให้หน้าจอนิ่งสนิท 100% --- */
+
+/* 1. บังคับให้พื้นที่ Scrollbar คงที่ หน้าจอจะได้ไม่ขยับซ้ายขวาตอนเปิดเมนู */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    padding-right: 0 !important;
+}
+
+/* 2. ป้องกันตัว AdminLTE คำนวณความกว้างผิดตอนเปิด Dropdown */
+.modal-open {
+    padding-right: 0 !important;
+}
+
+/* 3. ลบการ Transition ที่ทำให้ขยับสั่นตอนกดครั้งแรก */
+.navbar-nav .dropdown-menu {
+    margin: 0;
+    border: none;
+}
+
+/* 4. ปรับเมนูมุมขวาให้นิ่ง (User Menu) */
+.navbar-nav>.user-menu>.dropdown-menu {
+    border-radius: 12px !important;
+    border: 1px solid rgba(197, 160, 89, 0.2) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    transform: none !important;
+    /* ปิดการคำนวณตำแหน่งแบบสุ่ม */
+    margin-top: 5px !important;
+}
+
+/* 5. ใส่ความนุ่มนวลแทนการสั่น */
+.dropdown-menu.show {
+    animation: fadeInQuick 0.15s ease-out;
+}
+
+@keyframes fadeInQuick {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding-top: 0 !important;
+}
+
+.wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}

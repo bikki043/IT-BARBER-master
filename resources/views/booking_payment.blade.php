@@ -1,0 +1,1 @@
+@include('partials.payment_form', ['appointment' => $appointment])

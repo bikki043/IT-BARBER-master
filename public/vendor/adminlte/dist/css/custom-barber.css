@@ -1,0 +1,54 @@
+/* --- Sidebar Custom Black & Gold --- */
+
+/* 1. พื้นหลัง Sidebar ทั้งหมด */
+.main-sidebar {
+    background-color: #1a1a1a !important; 
+    border-right: 1px solid #c5a059 !important;
+}
+
+/* 2. โลโก้ด้านบน */
+.brand-link {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #c5a059 !important;
+    color: #c5a059 !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+/* 3. สีตัวอักษรเมนู (ปกติ) */
+.nav-sidebar .nav-link {
+    color: #d1d1d1 !important;
+    margin-bottom: 5px;
+    transition: 0.3s all;
+}
+
+/* 4. เมนูตอนเอาเมาส์ไปชี้ (Hover) */
+.nav-sidebar .nav-link:hover {
+    color: #c5a059 !important;
+    background-color: rgba(197, 160, 89, 0.1) !important;
+}
+
+/* 5. เมนูที่กำลังถูกเลือก (Active) */
+.nav-sidebar .nav-item.menu-open > .nav-link,
+.nav-sidebar .nav-link.active {
+    background: linear-gradient(45deg, #a68549, #c5a059) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    border-radius: 8px;
+}
+
+/* 6. ไอคอนในเมนู */
+.nav-sidebar .nav-link i {
+    color: #c5a059; /* ไอคอนสีทองตลอดเวลา */
+}
+.nav-sidebar .nav-link.active i {
+    color: #ffffff; /* ยกเว้นตอน Active ให้ไอคอนสีขาว */
+}
+
+/* 7. ส่วนหัวข้อเมนู (Header) */
+.nav-header {
+    color: #6c757d !important;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
